@@ -1,4 +1,20 @@
 #include "lintilla.dtsi"
 #include "lintilla_kscan.dtsi"
 
+/ {
+    scroll_encoder: scroll_encoder {
+        compatible = "alps,ec11";
+        gpios = <&gpio0 9 (GPIO_ACTIVE_HIGH)>,  // P0.09
+                <&gpio0 10 (GPIO_ACTIVE_HIGH)>; // P0.10
+        encoder {
+            steps = <1>;
+            resolution = <4>;
+        };
+    };
+};
+
+&scroll_encoder {
+    bindings = <&scroll_ccw>, <&scroll_cw>;
+};
+
 // vim: expandtab softtabstop=4 shiftwidth=4 filetype=devicetree
