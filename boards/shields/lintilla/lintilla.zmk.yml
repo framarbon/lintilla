@@ -10,6 +10,7 @@ exposes:
 features:
   - keys
   - display
+  - encoder
 siblings:
   - lintilla_left_central
   - lintilla_left_peripheral
