@@ -39,6 +39,11 @@
     };
 };
 
+// Disable NFC
+&nfct {
+    status = "disabled";
+};
+
 // For bigger batteries, we want to enable faster charging
 &gpio0 {
     fastbatcharge: fast-battery-charge {
