@@ -14,5 +14,6 @@ features:
 siblings:
   - lintilla_left_central
   - lintilla_left_peripheral
+  - lintilla_right_central
   - lintilla_right_peripheral
   - lintilla_dongle

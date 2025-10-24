@@ -1,4 +1,8 @@
 #include "lintilla.dtsi"
 #include "lintilla_kscan.dtsi"
 
+&left_encoder {
+    status = "okay";
+};
+
 // vim: expandtab softtabstop=4 shiftwidth=4 filetype=devicetree
